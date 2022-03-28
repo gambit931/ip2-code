@@ -71,7 +71,7 @@ color: #FF4500;
 /* Calendar CSS */
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+body {font-family: Monaco, sans-serif;}
 
 .month {
   padding: 70px 25px;

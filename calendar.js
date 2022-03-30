@@ -1,3 +1,14 @@
+const countEl = document.getElementById('count');
+
+function updateCount() {
+fetch('https://api.countapi.xyz/get/nathan/twite/?amount=1')
+.then(res => res.json())
+.then(res => {
+countEl.innerHTML = res.value;
+});
+}
+
+
 const month = new Month();
 const months = [
 "January"
@@ -19,5 +30,7 @@ document.querySelector('.month h2').innerHTML
 
 document.querySelector('.month span').innerHTML
 = month. toMonthString();
+
+
 
 

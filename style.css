@@ -92,6 +92,12 @@ body {font-family: Monaco, sans-serif;}
   letter-spacing: 4px;
 }
 
+.month .h1{
+   color: white;
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: 4px;}
+
 .month .prev {
   float: left;
   padding-top: 10px;

@@ -102,7 +102,9 @@ body {font-family: Monaco, sans-serif;}
   padding-top: 10px;
 }
 
-
+.next_date{
+opacity:0.5;
+}
 
 .weekdays {
   margin: 0;
@@ -131,12 +133,19 @@ body {font-family: Monaco, sans-serif;}
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
+  transition: background-color 0.2s;
 }
 
 .days li .active {
   padding: 5px;
   background: #D2691E;
   color: white !important
+}
+
+.days li:hover:not(.active){
+background-color:#ddd;
+border:.2rem solid #FF8C00
+cursor:pointer;
 }
 
 /* Add media queries for smaller screens */

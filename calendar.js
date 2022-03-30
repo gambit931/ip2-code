@@ -1,4 +1,4 @@
-const date = new Date();
+const month = new Month();
 const months = [
 "January"
 "February"
@@ -14,6 +14,10 @@ const months = [
 "December"
 ];
 
-document.querySelector('.date h1').innerHTML
+document.querySelector('.month h2').innerHTML
+= months[month.getMonth()];
+
+document.querySelector('.month span').innerHTML
+= month. toMonthString();
 
 

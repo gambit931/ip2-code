@@ -159,7 +159,7 @@ input[type=text] {
   border-radius: 4px;
 }
 
-input[type=messagebox] {
+#messagebox {
   border: 2px solid orange;
   border-radius: 4px;
 }

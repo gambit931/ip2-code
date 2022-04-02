@@ -154,6 +154,11 @@ border:.2rem solid #FF8C00
 cursor:pointer;
 }
 
+input[type=text] {
+  border: 2px solid orange;
+  border-radius: 4px;
+}
+
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
   .weekdays li, .days li {width: 13.1%;}

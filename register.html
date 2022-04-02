@@ -11,16 +11,19 @@
 </head>
 
 <body>
-  <!-- Introductory Content and Naviation within the <header>-->
+  <!-- Introductory Content and Navigation within the <header>-->
   <header>
     <h1 class="underlined"> Day: One </h1>
     
         <nav>
-          
-          <a href="index.html">Homepage</a>
-          <a href="register.html" class="active">Register</a>
-          <a href="facilities.html">Calendar</a>
-          <a href="cafe.html">Activities</a>
+            <a href="index.html" class="active">Homepage </a>
+            <a href="register.html">Register</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="activities.html">Activities</a>
+            <div class="topnav-right">
+                <a href="Login.html">Login</a>
+                <a href="Settings.html">Settings</a>
+            </div>
           </nav>
   </header>
 
@@ -30,16 +33,22 @@
   </main>
   <section>
     <img src="images/clipboard.jpg" width="200" height="300" alt="Hug">
-    <h2>Tell us about yourself.</h2>
+    <h2>Sign Up To A New Experience</h2>
     <fieldset>
         <legend>Contact Info</legend>
-        <label for="firstname">Enter your First Name here</label><br>
- 
-        <label for="password">Enter your Password</label><br>
-     
-        <input type="email" name="email" id="email"> <br>
-        <label for="phone">Enter your Phone Number</label><br>
-        <input type="tel" name="phone" id="phone" default="+44 123 123 1234"> <br>
+        <main>
+            <form action="/action_page.php">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <label for="Uname">Username:</label><br>
+                <input type="text" id="Uname" name="Uname" value=""><br>
+                <label for="Pword">Password:</label><br>
+                <input type="text" id="Pword" name="lname" value=""><br><br>
+                <input type="submit" value="Sign up">
+                <label for="number">Phone Number:</label><br>
+                <input type="text" id="number" name="number" value=""><br>
+            </form>
+        </main>
         Would you like to send us a message? <br>
         <textarea id="messagebox" name="message" rows="4" cols="50"></textarea><br>
         

@@ -176,9 +176,9 @@ input {
     box-sizing: border-box;
 }
 
-input[type=text] {
+input[type=text]:focus {
   background-color: #B0E0E6;
-  color: white;
+  color: black;
 }
 
 /* Add media queries for smaller screens */

@@ -165,7 +165,7 @@ input[type=text] {
 }
 
 fieldset {
-  border: 2px solid orange;
+  border: 2px #B0C4DE;
   border-radius: 4px;
 }
 

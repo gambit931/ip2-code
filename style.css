@@ -1,3 +1,23 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#Stress{
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: auto;
+}
+#selfcare{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
 nav {
  background-color: #FF4500;
  /*padding top bottom, not left & right */
@@ -150,7 +170,7 @@ opacity:0.5;
 
 .days li:hover:not(.active){
 background-color:#ddd;
-border:.2rem solid #FF8C00
+border:.2rem solid #FF8C00;
 cursor:pointer;
 }
 

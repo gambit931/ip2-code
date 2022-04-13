@@ -1,6 +1,11 @@
 <?php
 
- 
+if(isset($_POST['firstName'])
+
+
+$con = mysqli_connect('localhost', 'root', '','db_contact');
+
+
   $firstName = filter_input(INPUT_POST, 'firstName');
   $password = filter_input(INPUT_POST, 'password');
   $email = filter_input(INPUT_POST, 'email');

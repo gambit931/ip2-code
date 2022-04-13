@@ -1,4 +1,4 @@
-<?php
+<?php phpinfo();
 
  
   $firstName = filter_input(INPUT_POST, 'firstName');

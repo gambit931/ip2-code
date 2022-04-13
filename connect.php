@@ -20,7 +20,7 @@
 		  $dbpassword = "";
 		  $dbemail = "";
 		  $dbnumber = "";
-		  $dbname = "ip2database";
+		  $dbname = "form2";
 
 
 		  $conn = new mysqli ($host, $dbfirstName, $dbpassword, $dbemail, $dbnumber, $dbname);

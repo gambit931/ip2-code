@@ -1,10 +1,42 @@
-nav {
- background-color: #FF4500;
- /*padding top bottom, not left & right */
- padding: 1rem 0rem;
- width: 100%;
 
- }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+nav {
+  background-color: #FF4500;
+  /*padding top bottom, not left & right */
+
+ /* padding: 1rem 0rem; */
+  width: 100%;
+  font-family: Ubuntu;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10$;
+
+  }
+
+nav.footer{
+  background-color: orange;
+  width:40%;
+  font-family: Ubuntu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  padding: 30px 10$;
+
+}
+
+  .nav__links {
+    list-style: none;
+  }
+
+  .nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+  }
 /* Style the links inside the navigation bar */
 nav a {
  color: #fefee3ff;
@@ -68,129 +100,46 @@ color: #FF4500;
   float: right;
 }
 
-/* Calendar CSS */
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Monaco, sans-serif;}
+img.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
 
-.month {
-  padding: 40px 25px;
-  width: 100%;
-  background: #D2691E;
-  text-align: center;
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
+p.underlined, h4 {
+  font-family: Ubuntu;
+  
+
+
 }
 
-.month ul li {
-  color: white;
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.month h2{
-   color: white;
-   font-size: 30px;
-   text-transform: uppercase;
-   letter-spacing: 4px;}
-
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
+img.right{
   float: right;
-  padding-top: 10px;
 }
 
-.next_date{
-opacity:0.5;
-}
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
+h3.centre{
   text-align: center;
+  font-family: Helvetica;
 }
 
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
+.logo {
+  cursor: pointer;
 }
 
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-  transition: background-color 0.2s;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #D2691E;
-  color: white !important
-}
-
-.days li:hover:not(.active){
-background-color:#ddd;
-border:.2rem solid #FF8C00
-cursor:pointer;
-}
-
-input[type=text] {
-  border: 2px solid orange;
-  border-radius: 4px;
-}
-
-#messagebox {
-  border: 2px solid orange;
-  border-radius: 4px;
-}
-
-fieldset {
-  border: 2px solid blue;
-  border-radius: 4px;
-}
-
-input {
-  width: 100%;
-   padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=text]:focus {
-  background-color: #B0E0E6;
-  color: black;
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
+button.index {
+   
+    background:linear-gradient(to bottom, #FF4500 100%);
+    background-color:#FF4500;
+    border-radius:10px;
+    border:1px solid #040F0F;
+    display:inline-block;
+    cursor:pointer;
+    color:#040F0F;
+    font-family: Ubuntu;
+    font-size:25px;
+    padding:15px 50px;
+    text-decoration:none;
 }

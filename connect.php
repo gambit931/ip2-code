@@ -25,7 +25,7 @@ $con = mysqli_connect('localhost', 'root', '','db_contact');
 		  $dbpassword = "";
 		  $dbemail = "";
 		  $dbnumber = "";
-		  $dbname = "form2";
+		  $dbname = "register";
 
 
 		  $conn = new mysqli ($host, $dbuserName, $dbpassword, $dbemail, $dbnumber, $dbname);

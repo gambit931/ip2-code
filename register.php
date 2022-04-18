@@ -15,7 +15,7 @@ $con = mysqli_connect('localhost','root',
        (`Username`, `Password`, `Email`, `Number`, `Message Box`, `id`)
        VALUES ('$userName', '$password', '$email', '$number', '$messageBox', '0')";
 
-         $rs = mysqli_query($con, $sql);
+$rs = mysqli_query($con, $sql);
 
       if($rs)
       {

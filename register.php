@@ -23,17 +23,20 @@ if (mysqli_connect_error()){
 die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
+
 else{
 $sql = "INSERT INTO register (Username, Password, Email, Number, Message Box, id)
 values ('$userName','$password','$email','$number','$messageBox','0')";
 if ($conn->query($sql)){
 echo "New registration has been sucessfully entered";
 }
-
 else{
 echo "Error: ". $sql ."
 ". $conn->error;
 }
 $conn->close();
+}
+}
+}}}}}}}
 
 ?>

@@ -36,12 +36,25 @@ $conn->close();
 }
 }
 else{
-echo "Password should not be empty";
+echo "Username should not be empty";
 die();
 }
 }
 else{
-echo "Username should not be empty";
+echo "Password should not be empty";
 die();
 }
+else{
+echo "Email should not be empty";
+die();
+}
+else{
+echo "Number should not be empty";
+die();
+}
+else{
+echo "Message should not be empty";
+die();
+}
+
 ?>

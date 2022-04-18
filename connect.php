@@ -13,23 +13,12 @@ $con = mysqli_connect("localhost","root",
        (`Username`, `Password`, `Email`, `Number`, `Message Box`, `id`)
        VALUES ('$userName', '$password', '$email', '$number', '$messageBox', '0')";
 
-          if (mysqli_connect_error()) {
-             die('Connect Error ( '.
-                          mysqli_connect_errno().')' .
-                          mysqli_connect_error());
+         $rs = mysqli_query($con, $sql);
 
-          }
-          else {
-             if ($conn->query($sql)) {
-                echo "New record is inserted successfully";
-             }
-             else {
-                echo "Error: ". $sql . "<br>". $conn->error;
-             }
+         if($rs)
+         {
+            echo "Contact Records Inserted";
+         }
 
-             }
-             $conn->close();
+         ?>
 
-
-
-   ?>

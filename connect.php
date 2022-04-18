@@ -21,7 +21,7 @@ $con = mysqli_connect('localhost','root',
       {
       	echo "Register information taken in";
       }
-      }
+
       else
       {
       	echo "Are you a bot?";

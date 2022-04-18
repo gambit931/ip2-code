@@ -20,7 +20,6 @@ $con = mysqli_connect("localhost","root",
 
           }
           else {
-             $sql = "INSERT INTO form(userName, password, email, number) values ('$userName', '$password', '$email', '$number')";
              if ($conn->query($sql)) {
                 echo "New record is inserted successfully";
              }

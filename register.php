@@ -25,8 +25,10 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 }
 
 else{
-$sql = "INSERT INTO register (Username, Password, Email, Number, Message Box, id)
-values ('$userName','$password','$email','$number','$messageBox','0')";
+$sql = "INSERT INTO `register`
+       (`Username`, `Password`, `Email`, `Number`, `Message Box`, `id`)
+       VALUES ('$userName', '$password', '$email', '$number', '$messageBox', '0')";
+
 if ($conn->query($sql)){
 echo "New registration has been sucessfully entered";
 }
@@ -36,7 +38,6 @@ echo "Error: ". $sql ."
 }
 $conn->close();
 }
-}
-}}}}}}
+
 
 ?>

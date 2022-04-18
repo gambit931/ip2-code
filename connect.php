@@ -1,7 +1,9 @@
 <?php
 
-$con = mysqli_connect("localhost","root",
-       "","day1");
+if(isset($_POST['userName']))
+
+$con = mysqli_connect('localhost','root',
+       '','day1');
 
        $userName = $_POST['userName'];
        $password = $_POST['password'];
@@ -15,10 +17,14 @@ $con = mysqli_connect("localhost","root",
 
          $rs = mysqli_query($con, $sql);
 
-         if($rs)
-         {
-            echo "Contact Records Inserted";
-         }
+      if($rs)
+      {
+      	echo "Register information taken in";
+      }
+      }
+      else
+      {
+      	echo "Are you a bot?";
 
-         ?>
-
+      }
+      ?>

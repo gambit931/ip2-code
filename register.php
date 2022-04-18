@@ -18,6 +18,7 @@ $dbname = "day1";
 
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
 if (mysqli_connect_error()){
 die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
@@ -28,10 +29,13 @@ values ('$userName','$password','$email','$number','$messageBox','0')";
 if ($conn->query($sql)){
 echo "New registration has been sucessfully entered";
 }
+
 else{
 echo "Error: ". $sql ."
 ". $conn->error;
 }
 $conn->close();
+}
+}
 
 ?>

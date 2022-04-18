@@ -35,7 +35,3 @@ echo "Error: ". $sql ."
 ". $conn->error;
 }
 $conn->close();
-}
-}
-
-?>

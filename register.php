@@ -5,11 +5,11 @@ $email = filter_input(INPUT_POST, 'email');
 $number = filter_input(INPUT_POST, 'number');
 $messageBox = filter_input(INPUT_POST, 'messageBox');
 
-if (!empty($username)){
-if (!empty($password)){
-if (!empty($email)){
-if (!empty($number)){
-if (!empty($messageBox)){
+if (!empty($username)){};
+if (!empty($password)){};
+if (!empty($email)){};
+if (!empty($number)){};
+if (!empty($messageBox)){};
 
 $host = "localhost";
 $dbusername = "root";
@@ -35,3 +35,5 @@ echo "Error: ". $sql ."
 ". $conn->error;
 }
 $conn->close();
+
+?>

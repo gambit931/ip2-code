@@ -37,6 +37,6 @@ echo "Error: ". $sql ."
 $conn->close();
 }
 }
-}}}}}}}
+}}}}}}
 
 ?>

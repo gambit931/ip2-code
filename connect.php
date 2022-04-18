@@ -13,11 +13,24 @@ $con = mysqli_connect("localhost","root",
        (`Username`, `Password`, `Email`, `Number`, `Message Box`, `id`)
        VALUES ('$userName', '$password', '$email', '$number', '$messageBox', '0')";
 
-       $rs = mysqli_query($con, $sql);
+          if (mysqli_connect_error()) {
+             die('Connect Error ( '.
+                          mysqli_connect_errno().')' .
+                          mysqli_connect_error());
 
-       if($rs)
-       {
-       	echo "Contact Records Inserted";
-       }
+          }
+          else {
+             $sql = "INSERT INTO form(userName, password, email, number) values ('$userName', '$password', '$email', '$number')";
+             if ($conn->query($sql)) {
+                echo "New record is inserted successfully";
+             }
+             else {
+                echo "Error: ". $sql . "<br>". $conn->error;
+             }
 
-       ?>
+             }
+             $conn->close();
+
+
+
+   ?>

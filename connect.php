@@ -1,19 +1,19 @@
 <?php
 
-if(isset($_POST['firstName'])
+if(isset($_POST['userName'])
 
 
 $con = mysqli_connect('localhost', 'root', '','db_contact');
 
 
-  $firstName = filter_input(INPUT_POST, 'firstName');
+  $firstName = filter_input(INPUT_POST, 'userName');
   $password = filter_input(INPUT_POST, 'password');
   $email = filter_input(INPUT_POST, 'email');
   $number = filter_input(INPUT_POST, 'number');
 
 
 
-  if (!empty($firstName)) {
+  if (!empty($userName)) {
 	  if (!empty($password)) {
 		  if (!empty($email)) {
 			  if (!empty($number)) {
@@ -21,14 +21,14 @@ $con = mysqli_connect('localhost', 'root', '','db_contact');
 			  
 		  
 		  $host = "localhost";
-		  $dbfirstName = "root";
+		  $dbuserName = "root";
 		  $dbpassword = "";
 		  $dbemail = "";
 		  $dbnumber = "";
 		  $dbname = "form2";
 
 
-		  $conn = new mysqli ($host, $dbfirstName, $dbpassword, $dbemail, $dbnumber, $dbname);
+		  $conn = new mysqli ($host, $dbuserName, $dbpassword, $dbemail, $dbnumber, $dbname);
 
 			  }
 			}
@@ -43,7 +43,7 @@ $con = mysqli_connect('localhost', 'root', '','db_contact');
 
 		  }
 		  else {
-			  $sql = "INSERT INTO form(firstName, password, email, number) values ('$firstName', '$password', '$email', '$number')";
+			  $sql = "INSERT INTO form(userName, password, email, number) values ('$userName', '$password', '$email', '$number')";
 			  if ($conn->query($sql)) {
 				  echo "New record is inserted successfully";
 			  }

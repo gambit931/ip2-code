@@ -37,7 +37,8 @@
     <fieldset>
         <legend>Tell Us About Yourself</legend>
         <main>
-            <form name ="frmRegister" method = "post" action="connect.php"><br>
+            <fieldset>
+            <form name ="frmRegister" method = "post" class ="input" action="register.php"><br>
                 <label for="username">Username:</label><br>
                 <input type="text" id="userName" name="userName" value=""><br><br>
                 <label for="password">Password:</label><br>
@@ -47,10 +48,11 @@
                 <label for="number">Phone Number:</label><br>
                 <input type="text" id="number" name="number" value=""><br><br>
                 Would you like to send us a message? <br>
-                <textarea id="messagebox" name="messagebox" rows="4" cols="50"></textarea><br><br>
+                <textarea id="messageBox" name="messageBox" rows="4" cols="50"></textarea><br><br>
                 <p>&nbsp;</p>
                 <input type="submit" name="submit" value="Sign up">
             </form>
+    </fieldset>
         </main>
 
 

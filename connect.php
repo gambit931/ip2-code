@@ -1,59 +1,30 @@
 <?php
 
-if(isset($_POST['userName'])
+if(isset($_POST['userName']))
 
+$con = mysqli_connect('localhost','root',
+       '','day1');
 
-$con = mysqli_connect('localhost', 'root', '','db_contact');
+       $userName = $_POST['userName'];
+       $password = $_POST['password'];
+       $email = $_POST['email'];
+       $number = $_POST['number'];
+       $messageBox = $_POST['messageBox'];
 
+       $sql = "INSERT INTO `register`
+       (`Username`, `Password`, `Email`, `Number`, `Message Box`, `id`)
+       VALUES ('$userName', '$password', '$email', '$number', '$messageBox', '0')";
 
-  $firstName = filter_input(INPUT_POST, 'userName');
-  $password = filter_input(INPUT_POST, 'password');
-  $email = filter_input(INPUT_POST, 'email');
-  $number = filter_input(INPUT_POST, 'number');
+         $rs = mysqli_query($con, $sql);
 
+      if($rs)
+      {
+      	echo "Register information taken in";
+      }
 
+      else
+      {
+      	echo "Are you a bot?";
 
-  if (!empty($userName)) {
-	  if (!empty($password)) {
-		  if (!empty($email)) {
-			  if (!empty($number)) {
-
-			  
-		  
-		  $host = "localhost";
-		  $dbuserName = "root";
-		  $dbpassword = "";
-		  $dbemail = "";
-		  $dbnumber = "";
-		  $dbname = "form2";
-
-
-		  $conn = new mysqli ($host, $dbuserName, $dbpassword, $dbemail, $dbnumber, $dbname);
-
-			  }
-			}
-		}
-	}
-
-
-		  if (mysqli_connect_error()) {
-			  die('Connect Error ( '.
-			  					mysqli_connect_errno().')' . 
-								mysqli_connect_error());
-
-		  }
-		  else {
-			  $sql = "INSERT INTO form(userName, password, email, number) values ('$userName', '$password', '$email', '$number')";
-			  if ($conn->query($sql)) {
-				  echo "New record is inserted successfully";
-			  }
-			  else {
-				  echo "Error: ". $sql . "<br>". $conn->error;
-			  }
-
-			  }
-			  $conn->close();
-	
-
-
- ?>
+      }
+      ?>

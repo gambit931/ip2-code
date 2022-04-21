@@ -219,3 +219,9 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important
 }
+
+/*Form CSS*/
+input[type=text] {
+  border: 2px #6495ED;
+  border-radius: 4px;
+}

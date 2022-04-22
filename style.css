@@ -13,11 +13,21 @@ body {
 }
 
 #Stress{
-    display: inline-block;
+    position: center;
     margin-left: 300px;
     margin-right: auto;
 }
 #selfcare{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ph1{
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: auto;
+}
+#ph2{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;

@@ -147,13 +147,13 @@ button.index {
 /* Calendar CSS */
 
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
 
 /* Month header */
 .month {
   padding: 70px 25px;
-  width: 100%;
-  background: #1abc9c;
+  width: 96%;
+  background: #FFA500 ;
   text-align: center;
 }
 
@@ -187,6 +187,7 @@ body {font-family: Verdana, sans-serif;}
   margin: 0;
   padding: 10px 0;
   background-color:#ddd;
+  width: 100%
 }
 
 .weekdays li {
@@ -216,9 +217,18 @@ body {font-family: Verdana, sans-serif;}
 /* Highlight the "current" day */
 .days li .active {
   padding: 5px;
-  background: #1abc9c;
+  background: #FFA500;
   color: white !important
 }
+
+li:hover{
+background-color: #F5F5F5;
+}
+
+.Jan{
+color: FFFFF;
+}
+
 
 /*Form CSS*/
 fieldset {

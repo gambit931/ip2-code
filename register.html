@@ -4,7 +4,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="Day: One">
+    <meta name="keywords" content="Mental,Health,Matters">
+    <meta name="author" content="D-4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
 
   <link rel="stylesheet" href="style.css">
@@ -38,19 +42,19 @@
         <legend>Tell Us About Yourself</legend>
         <main>
             <fieldset>
-            <form name ="frmRegister" method = "post" class ="input" action="register.php"><br>
-                <label for="username">Username:</label><br>
-                <input type="text" id="userName" name="userName" value=""><br><br>
-                <label for="password">Password:</label><br>
-                <input type="text" id="password" name="password" value=""><br><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" value=""><br><br>
-                <label for="number">Phone Number:</label><br>
-                <input type="text" id="number" name="number" value=""><br><br>
-                Would you like to send us a message? <br>
-                <textarea id="messageBox" name="messageBox" rows="4" cols="50"></textarea><br><br>
-                <p>&nbsp;</p>
-                <input type="submit" name="submit" value="Sign up">
+                <form name ="frmRegister" method = "post" class ="input" action="register.php"><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="userName" name="userName" value="" required><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password" value="" maxlength="10" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value=""  required><br><br>
+                    <label for="number">Phone Number:</label><br>
+                    <input type="number" id="number" name="number" value="" required><br><br>
+                    Would you like to send us a message? <br>
+                    <textarea id="messageBox" name="messageBox" rows="4" cols="50"></textarea>
+                    <p>&nbsp;</p>
+                    <input type="submit" id ="submit" name="submit" value="Sign up">
             </form>
     </fieldset>
         </main>
